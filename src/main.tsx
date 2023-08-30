@@ -6,6 +6,7 @@ import App from './App.tsx'
 import './index.css'
 import Store from './pages/Store.tsx';
 import store from './store/Store.tsx';
+import Home from './pages/Home.tsx';
 
 //home
 //store
@@ -14,7 +15,8 @@ import store from './store/Store.tsx';
 const router= createBrowserRouter(
 
 [
-  {path:"/store" ,element:<Store/>}
+  {path:"/store" ,element:<Store/>},
+  {path:"/" , element:<Home/>}
 
 
 ]);

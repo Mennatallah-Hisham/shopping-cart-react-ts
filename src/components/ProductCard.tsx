@@ -23,26 +23,32 @@ const currentItem= cartItems.find((item:Tproduct)=>item.id===id);
 currentItem?quantity=currentItem.quantity:quantity=0;
 
   return (
-    <div className='w-1/4'>
+    <div className='w-48 '>
     <img src={image}/>
-       <p>{name}</p>
-       <p>{formatCurrency(price)}</p>
-
-       {quantity===0?
-        <button className='bg-blue-900 text-white w-full'
+    <div className='flex justify-between mt-3'>
+    <p  className='font-semibold capitalize'>{name}</p>
+       <p className='font-semibold'>{formatCurrency(price)}</p>
+    </div>
+     
+<div className=' mt-3'>
+{quantity===0?
+        <button className='bg-blue-900 text-white w-full capitalize py-1'
         onClick={addItemHandler}>add to cart</button>
         :
-       <div>
+       <div className=''>
        
-            <div className='flex gap-3'>
-            <button  onClick={addItemHandler}>+</button>
-            <p>{quantity}</p>
-            <button onClick={removeItemHandler}>-</button>
+            <div className='flex  justify-center gap-3'>
+            <button className='bg-blue-900 text-white px-5  text-lg  ' onClick={removeItemHandler}>-</button>
+          
+            <p className='text-xl font-semibold'>{quantity}</p>
+            <button className='bg-blue-900 text-white  px-5  text-lg ' onClick={addItemHandler}>+</button>
             </div>
      
-        <button onClick={deleteItemHandler}>remove</button>
+        <button onClick={deleteItemHandler} className='bg-blue-900 text-white w-full capitalize mt-3 py-1'>remove</button>
         </div>
        }
+</div>
+    
    
     </div>
   )
