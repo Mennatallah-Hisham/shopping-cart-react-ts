@@ -6,7 +6,9 @@ import App from './App.tsx'
 import './index.css'
 import Store from './pages/Store.tsx';
 import store from './store/Store.tsx';
-import Home from './pages/Home.tsx';
+import Cart from './pages/Cart.tsx';
+import Error from './pages/Error.tsx';
+import Layout from './components/Layout.tsx';
 
 //home
 //store
@@ -15,8 +17,18 @@ import Home from './pages/Home.tsx';
 const router= createBrowserRouter(
 
 [
-  {path:"/store" ,element:<Store/>},
-  {path:"/" , element:<Home/>}
+  {path:"/",
+  element:<App/>,
+  errorElement:<Error/>,
+
+  children:[{
+   index:true ,element:<Store/>
+  },{
+    path:"cart" , element:<Cart/>
+  }
+]
+}
+ 
 
 
 ]);
@@ -24,15 +36,17 @@ const router= createBrowserRouter(
 ReactDOM.createRoot(document.getElementById('root')!).render(
 
 
-  <React.StrictMode>
+
     <Provider store={store}>
     <RouterProvider router={router}/>
-    <App />
+    <React.StrictMode>
+  
+    
+  </React.StrictMode>
 
     </Provider>
    
   
-  </React.StrictMode>
  
   
 ,
