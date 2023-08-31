@@ -1,73 +1,120 @@
 [
-    {
-    "id":1,
-    "price":15.99,
-    "name":"product",
-    "image":"../../public/images/chair.jpg",
-"quantity":0
-    }
-    ,
-    {
-        "id":2,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/chair2.jpg",
-        "quantity":0
-        }
-        
-    ,
-    {
-        "id":3,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/lamp.png",
-        "quantity":0
-        }
-        
-    ,
-    {
-        "id":4,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/Ceramic Lamps.png   ",
-        "quantity":0
-        }
-        
-    ,
-    {
-        "id":5,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/lamp.png",
-        "quantity":0
-        }
-        
-    ,
-    {
-        "id":6,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/lamp.png",
-        "quantity":0
-        }
-        
-    ,
-    {
-        "id":7,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/lamp.png",
-        "quantity":0
-        }
-        
-    ,
-    {
-        "id":8,
-        "price":15.99,
-        "name":"product",
-        "image":"../../public/images/lamp.png",
-        "quantity":0
-        
-        }
-        
+  
+
+
+
+  {
+    "id": 9,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p3.jfif",
+    "quantity": 0
+  },
+  {
+    "id": 10,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p4.jfif",
+    "quantity": 0
+  },
+  {
+    "id": 11,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p5.jfif",
+    "quantity": 0
+  },
+  {
+    "id": 12,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p6.jfif",
+    "quantity": 0
+  },
+ 
+  {
+    "id": 14,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p8.jfif",
+    "quantity": 0
+  },
+  {
+    "id": 15,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p9.jfif",
+    "quantity": 0
+  },
+  {
+    "id": 16,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p10.jfif",
+    "quantity": 0
+  },
+  {
+    "id": 17,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p11.jfif",
+    "quantity": 0
+  },
+  
+ 
+  {
+    "id": 20,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p14.jfif",
+    "quantity": 0
+  }
+  ,
+  {
+    "id": 22,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p16.jfif",
+    "quantity": 0
+  }
+  ,
+  {
+    "id": 23,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p17.webp",
+    "quantity": 0
+  }
+  ,
+  {
+    "id": 24,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p18.jfif",
+    "quantity": 0
+  }
+  ,
+  {
+    "id": 25,
+    "price": 15.99,
+    "name": "product19",
+    "image": "../../public/images/p19.jfif",
+    "quantity": 0
+  }
+  ,
+  {
+    "id": 26,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p20.png",
+    "quantity": 0
+  }
+  ,
+  {
+    "id": 27,
+    "price": 15.99,
+    "name": "product",
+    "image": "../../public/images/p21.jfif",
+    "quantity": 0
+  }
 ]
