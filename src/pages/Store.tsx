@@ -1,16 +1,15 @@
 
 import storeItems from "../data/items.json";
-import { Tproduct } from '../types/Types';
-import ProductCard from '../components/ProductCard';
+
+import Products from "../components/Products";
 
 const Store = () => {
 
   return (
-  <section className='flex flex-wrap gap-5'>
- 
-    <h1>store page</h1>
- {storeItems.map((item:Tproduct)=>(
- <ProductCard key={item.id}{ ...item} />))}
+  <section className='mt-10'>
+    <h1 className="capitalize text-3xl  text-blue-900 font-semibold text-center"> shop now</h1>
+    <Products productsList={storeItems}/>
+
   </section>
   )
 }
