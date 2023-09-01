@@ -1,11 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { Tproduct, Tstate } from "../types/Types";
 
+
 const initialState:Tstate = {
   items: [],
   totalPrice: 0,
   totalQuantity: 0,
 };
+
+
 
 const cartSlice = createSlice({
   name: "cart",
@@ -27,6 +30,7 @@ const cartSlice = createSlice({
       }
       state.totalPrice+=item.price;
     state.totalQuantity++;
+ 
 
  
   
@@ -47,6 +51,7 @@ const cartSlice = createSlice({
         }
         state.totalPrice-= existItem.price;
         state.totalQuantity--;
+   
   
 
     },
@@ -60,19 +65,7 @@ const cartSlice = createSlice({
       state.totalPrice = 0;
       state.totalQuantity = 0;
     },
-
-    /// return void or Tstate cant return number
-    // getItemQunatity(state,action){
-    //     const id:number=action.payload;
-    //     const item= state.items.find((i) => i.id === id);
-    //     if(item){
-    //         return item.quantity;
-    //     }
-    //     return 0;
-
-  
-
-    // }
+ 
   },
 });
 

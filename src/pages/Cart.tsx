@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import Products from "../components/Products";
 
 
+
 const Cart = () => {
   const {items, totalPrice,
   totalQuantity}=useSelector((state)=>state.cart);

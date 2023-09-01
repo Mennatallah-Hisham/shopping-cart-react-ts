@@ -24,10 +24,14 @@ currentItem?quantity=currentItem.quantity:quantity=0;
 
   return (
     <div className='w-48 '>
+      <div className='h-72 bg-gray-500'>
+
+   
     <img src={image}/>
     <div className='flex justify-between mt-3'>
     <p  className='font-semibold capitalize'>{name}</p>
        <p className='font-semibold'>{formatCurrency(price)}</p>
+    </div>
     </div>
      
 <div className=' mt-3'>
