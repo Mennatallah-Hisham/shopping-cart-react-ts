@@ -1,6 +1,6 @@
 
 import ProductCard from './ProductCard'
-import { Tproduct } from '../types/Types'
+import { Tproduct } from '../../types/Types'
 
 type TproductList ={
 productsList:Tproduct[]

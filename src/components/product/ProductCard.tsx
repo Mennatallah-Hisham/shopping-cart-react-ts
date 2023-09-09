@@ -1,7 +1,7 @@
 
-import { Tproduct ,Tstate } from '../types/Types'
-import { formatCurrency } from '../utilities/formatCurrency';
-import { cartActions } from '../store/Cart';
+import { Tproduct ,Tstate } from '../../types/Types'
+import { formatCurrency } from '../../utilities/formatCurrency';
+import { cartActions } from '../../store/Cart';
 import { useDispatch , useSelector } from 'react-redux';
 
 const ProductCard = ({id,image,name,price,quantity}:Tproduct) => {

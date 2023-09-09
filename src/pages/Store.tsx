@@ -1,9 +1,9 @@
 
 import storeItems from "../data/items.json";
 
-import Products from "../components/Products";
+import Products from "../components/product/Products";
 import Header from "../components/Header";
-import { Tproduct } from "../types/Types";
+
 
 const Store = () => {
 
