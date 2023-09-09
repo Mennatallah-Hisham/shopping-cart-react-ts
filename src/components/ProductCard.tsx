@@ -1,5 +1,5 @@
 
-import { Tproduct  } from '../types/Types'
+import { Tproduct ,Tstate } from '../types/Types'
 import { formatCurrency } from '../utilities/formatCurrency';
 import { cartActions } from '../store/Cart';
 import { useDispatch , useSelector } from 'react-redux';
@@ -17,14 +17,15 @@ const ProductCard = ({id,image,name,price,quantity}:Tproduct) => {
   const deleteItemHandler=()=>{
     dispatch(cartActions.deleteItem(id));
   }
-  const cartItems=useSelector((state)=>state.cart.items);
+  const cartItems:Tproduct[]=useSelector((state)=>state.cart.items);
+  
 const currentItem= cartItems.find((item:Tproduct)=>item.id===id);
 
 currentItem?quantity=currentItem.quantity:quantity=0;
 
   return (
     <div className='w-48 '>
-      <div className='h-72 bg-gray-500'>
+      <div>
 
    
     <img src={image}/>

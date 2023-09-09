@@ -3,35 +3,40 @@
 @tailwind utilities;
 
 
-img{
-    width:50rem;
-    max-width:100%;
-
-}
-
-.banner__img-sm{
-    width:10rem;
-   @media (min-width:760px){
-    width:13rem;
-   }
-
-}
-
-.banner__img-lg{
-  display:none;
-
-    @media (min-width:1200px){
-        display:block;
-        width:25rem; 
+@layer base{
+    h1{
+       @apply capitalize text-4xl lg:text-5xl  text-blue-900 font-semibold text-center
     }
 }
 
-.banner__img-sm img ,
-.banner__img-lg img{
-    border-radius:1rem;
+@layer components{
+    img{
 
-}
-
-.header-container{
-
+        max-width:100%;
+    
+    }
+    
+    .banner__img-sm{
+        width:10rem;
+       @media (min-width:760px){
+        width:13rem;
+       }
+    
+    }
+    
+    .banner__img-lg{
+      display:none;
+    
+        @media (min-width:1200px){
+            display:block;
+            width:25rem; 
+        }
+    }
+    
+    .banner__img-sm img ,
+    .banner__img-lg img{
+        border-radius:1rem;
+    
+    }
+    
 }
