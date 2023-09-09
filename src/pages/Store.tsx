@@ -2,15 +2,21 @@
 import storeItems from "../data/items.json";
 
 import Products from "../components/Products";
+import Header from "../components/Header";
 
 const Store = () => {
 
   return (
+    <>
+        <Header/>
   <section className='mt-10'>
-    <h1 className="capitalize text-3xl  text-blue-900 font-semibold text-center"> shop now</h1>
+
+
+
     <Products productsList={storeItems}/>
 
   </section>
+  </>
   )
 }
 

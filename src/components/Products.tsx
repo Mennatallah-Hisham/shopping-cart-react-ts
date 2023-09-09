@@ -8,7 +8,7 @@ const Products = ({productsList}:Tproduct[]) => {
 
   return (
 
-<div className=' lg:container flex flex-wrap gap-24 mt-10'>
+<div className=' lg:container flex justify-center flex-wrap gap-10 md:gap-24  mt-10'>
 {productsList.map((item:Tproduct)=>(
  <ProductCard key={item.id}{ ...item} />))}
 </div>
