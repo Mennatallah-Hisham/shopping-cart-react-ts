@@ -18,8 +18,12 @@ const Cart = () => {
    <EmptyCart/>
   ):(  
     <>
-    <CartHeader price={totalPrice}  quantity={totalQuantity}/>
+ <CartHeader price={totalPrice}  quantity={totalQuantity}/>
       <Products productsList={items}/>
+      <button className='bg-blue-900 text-white w-full capitalize mt-3 py-1 px-6'> check out</button>
+  
+     
+      
       
     </>
 
